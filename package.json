@@ -1,7 +1,7 @@
 {
-  "name": "react-coming-soon-page",
+  "name": "olive-holdings-website",
   "version": "1.0.0",
-  "description": "React site under contruction page to showcase countdown timer and opt-in form components.",
+  "description": "Olive holdings website",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
