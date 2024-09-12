@@ -17,18 +17,16 @@ const ContactUs: React.FC<ContactUsProps> = ({}) => {
   const [state, setState] = useState(INITIAL_STATE);
   const [loading, setLoading] = useState(false);
 
+  // @ts-expect-error ignore params
   function onChange(e) {
     const oldState = { ...state };
+    // @ts-expect-error ignore json error
     oldState[e.target.name] = e.target.value;
     setState(oldState);
   }
 
   async function onSumbit() {
     setLoading(true);
-    // await sendEmail(state);
-    //     // TODO: implement
-    //     console.log(values);
-
     await fetch("/api/send", {
       method: "POST",
       body: JSON.stringify(state),

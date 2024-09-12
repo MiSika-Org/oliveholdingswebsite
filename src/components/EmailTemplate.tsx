@@ -1,8 +1,11 @@
-import { FORM_INPUTS } from "@/app/api/send/route";
 import * as React from "react";
 
-interface EmailTemplateProps extends FORM_INPUTS {
-  //   firstName: string;
+interface EmailTemplateProps {
+  firstname: string;
+  lastname: string;
+  email: string;
+  phone: string;
+  message: string;
 }
 
 export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({

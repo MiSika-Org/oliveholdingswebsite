@@ -44,7 +44,6 @@ const Header: React.FC<HeaderProps> = ({ fromHome }) => {
   const handleScroll = () => {
     // Calculate rotation based on scroll position
     const yScroll = window.scrollY; //
-    // console.log({ yScroll });
     if (yScroll >= 69.5938) {
       if (!fixedCss) {
         setFixedCss(true);

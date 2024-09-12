@@ -1,18 +1,9 @@
 import { EmailTemplate } from "@/components/EmailTemplate";
-import { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import * as z from "zod";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
-export interface FORM_INPUTS {
-  firstname: string;
-  lastname: string;
-  email: string;
-  phone: string;
-  message: string;
-}
 
 const sendRouteSchema = z.object({
   firstname: z.string().min(2),
@@ -22,11 +13,8 @@ const sendRouteSchema = z.object({
   message: z.string().min(2),
 });
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export async function POST(req: NextApiRequest) {
+export async function POST(req: NextRequest) {
   const state = await req.json().then((body) => sendRouteSchema.parse(body));
-
-  console.log({ env: process.env, state });
 
   const { data, error } = await resend.emails.send({
     from: state.email,
@@ -34,7 +22,6 @@ export async function POST(req: NextApiRequest) {
     subject: "Hello world",
     react: EmailTemplate(state),
   });
-  console.log({ data, error, p: state.email });
   if (error) {
     // return res.status(400).json(error);
     return NextResponse.json(error, {
