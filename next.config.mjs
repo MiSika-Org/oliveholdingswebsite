@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import withPlugins from "next-compose-plugins";
+import withImages from "next-images";
 
-export default nextConfig;
+const nextConfig = {
+  images: {
+    disableStaticImages: true,
+  },
+};
+
+export default withPlugins([withImages], nextConfig);

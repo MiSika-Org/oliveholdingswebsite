@@ -1,101 +1,145 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import ActionCard from "@/components/home/ActionCard";
+import Approach from "@/components/home/Approach";
+import BottomSlider from "@/components/home/BottomSlider";
+import Dash from "@/components/home/Dash";
+import HomeSlide from "@/components/home/HomeSlide";
+import RotatingGear from "@/components/RotatingGear";
 import Image from "next/image";
+// import { loadEnvConfig } from "@next/env";
 
-export default function Home() {
+// const projectDir = process.cwd();
+// loadEnvConfig(projectDir);
+
+export default function IndexPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className="home-slide">
+        <Header fromHome />
+        <BottomSlider autoPlay swipeable={false}>
+          <HomeSlide />
+          <HomeSlide />
+        </BottomSlider>
+      </div>
+      <div className="explore h-screen relative">
+        <div className="explore-title">Explore our approach</div>
+        {/* ? */}
+        <Dash className="dash-1" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <Approach
+          step={1}
+          body="Invest: Provide growth capital investment in high-potential agricultural processors, focused on export"
+          position="bottom"
+          iconSize={84.5}
+          icon="/static/images/harvest.png"
+        />
+        <Dash className="dash-2" />
+        <Approach
+          step={2}
+          body="Enable: Develop platform of proprietary data, technology and impact information solutions that boost financial inclusion and transparency"
+          position="top"
+          iconSize={94}
+          icon="/static/images/game-icons_plant-roots.png"
+        />
+        <Dash className="dash-3" />
+        <Approach
+          step={3}
+          body="Scale: Proactively promote the efficient allocation of human and financial capital to enhance supply chains and strengthen processing capabilities"
+          position="bottom"
+          iconSize={85}
+          icon="/static/images/ph_tree-thin.png"
+        />
+        <Dash className="dash-4" />
+        <Approach
+          step={4}
+          body="Leverage: Provide growth capital investment in high-potential agricultural processors, focused on export"
+          position="top"
+          iconSize={83}
+          icon="/static/images/gear.png"
+        />
+        <RotatingGear />
+      </div>
+      <div className="portfolio-section flex flex-row">
+        <div>
+          <div className="explore-title">Our Portfolio</div>
+          <div className="portfolio-section-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+          <button className="flex flex-row items-center justify-center">
+            <p className="portfolio-section-text">View Full Portfolio</p>{" "}
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={"/static/images/right-arrow.png"}
+              alt="button-arrow"
+              className="button-image-2"
+              width={24}
+              height={24}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="portfolio-images">
+          <div className="flex flex-row items-center flex-wrap">
+            <Image
+              src={"/static/images/g-company.png"}
+              alt="g-company"
+              width={174.22}
+              height={135}
+            />
+            <Image
+              src={"/static/images/m-company.png"}
+              alt="m-company"
+              width={192.51}
+              height={163}
+            />
+            <Image
+              src={"/static/images/n-company.png"}
+              alt="n-company"
+              width={189.28}
+              height={168}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="cards-section flex justify-between items-center">
+        <Image
+          src={"/static/images/mscard.png"}
+          alt="mastercard"
+          width={176}
+          height={157}
+        />
+        <Image
+          src={"/static/images/usaid.png"}
+          alt="usaid"
+          width={393}
+          height={124}
+        />
+        <Image
+          src={"/static/images/gsa.png"}
+          alt="gas"
+          width={354}
+          height={164}
+        />
+      </div>
+      <div className="action-section text-white">
+        <div className="action-title">See Impact in Action </div>
+        <div className="action-main flex flex-row">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={"/static/images/woman-working.png"}
+            alt="woman-working"
+            width={668}
+            height={421}
+            className="action-image"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <BottomSlider>
+            <ActionCard />
+            <ActionCard />
+          </BottomSlider>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
