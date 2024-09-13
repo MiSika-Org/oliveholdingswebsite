@@ -38,6 +38,19 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   overflow: auto;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @layer utilities {
@@ -203,11 +216,13 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 0.5s ease-in-out;
+  color: #000;
+  transition: all 0.5s ease-in-out;
 }
 
 .approach-icon-selected {
   background: var(--brand);
+  color: white;
 }
 
 .approach-main-body {
@@ -589,8 +604,33 @@ img {
 .team-image {
   width: 354px;
   height: 471px;
-  background-color: grey;
+  /* background-color: grey; */
+  background-image: url(/static/images/linked-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 21px 13px;
+}
+
+.team-image-card {
+  background-color: var(--brand);
+  color: white;
+  height: 85px;
+  border-radius: 7px;
+  padding: 17px 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-image-card-title {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .team-focus-avatar {

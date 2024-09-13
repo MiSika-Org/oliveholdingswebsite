@@ -32,7 +32,7 @@ export default function IndexPage() {
           body="Invest: Provide growth capital investment in high-potential agricultural processors, focused on export"
           position="bottom"
           iconSize={84.5}
-          icon="/static/images/harvest.png"
+          icon="game-icons:plant-roots"
         />
         <Dash className="dash-2" />
         <Approach
@@ -40,7 +40,7 @@ export default function IndexPage() {
           body="Enable: Develop platform of proprietary data, technology and impact information solutions that boost financial inclusion and transparency"
           position="top"
           iconSize={94}
-          icon="/static/images/game-icons_plant-roots.png"
+          icon="game-icons:plant-roots"
         />
         <Dash className="dash-3" />
         <Approach
@@ -48,7 +48,7 @@ export default function IndexPage() {
           body="Scale: Proactively promote the efficient allocation of human and financial capital to enhance supply chains and strengthen processing capabilities"
           position="bottom"
           iconSize={85}
-          icon="/static/images/ph_tree-thin.png"
+          icon="ph:tree-thin"
         />
         <Dash className="dash-4" />
         <Approach
@@ -56,7 +56,7 @@ export default function IndexPage() {
           body="Leverage: Provide growth capital investment in high-potential agricultural processors, focused on export"
           position="top"
           iconSize={83}
-          icon="/static/images/gear.png"
+          icon="game-icons:plant-roots"
         />
         <RotatingGear className="gear-home" />
       </div>

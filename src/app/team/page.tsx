@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import TeamCard from "@/components/team/TeamCard";
 import React from "react";
 
 interface TeamProps {}
@@ -21,15 +22,21 @@ const Team: React.FC<TeamProps> = ({}) => {
         <div className="team-body">
           <div className="team-title">Leadership</div>
           <div className="flex flex-row team-images">
-            <a href="/team/1" className="team-image"></a>
-            <a href="/team/1" className="team-image"></a>
+            <TeamCard name="Kofi Kwakwa" title="  Corporate Services Manager" />
+
+            <TeamCard
+              name="Nana Appiah-Korang"
+              title="Lead Independent Director"
+            />
           </div>
         </div>
         <div className="team-body-2">
           <div className="team-title">Management</div>
           <div className="flex flex-row team-images">
-            <a href="/team/1" className="team-image"></a>
-            <a href="/team/1" className="team-image"></a>
+            <TeamCard name="Barry Muntari-Sumara" title="Investment Manager" />
+
+            <TeamCard name="Akua Lartey" title="Chairman" />
+            <TeamCard name="Charles Kwenin" title="  Investment Manager" />
           </div>
         </div>
         {/* <Footer /> */}

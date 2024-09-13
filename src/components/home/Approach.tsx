@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 interface ApproachProps {
   body: string;
@@ -81,13 +81,7 @@ function bottom(p: number) {
   }
 }
 
-const Approach: React.FC<ApproachProps> = ({
-  step,
-  body,
-  position,
-  icon,
-  iconSize,
-}) => {
+const Approach: React.FC<ApproachProps> = ({ step, body, position, icon }) => {
   const [hovered, setHovered] = useState(false);
 
   const handleNoUserMouseEnter = () => {
@@ -115,12 +109,13 @@ const Approach: React.FC<ApproachProps> = ({
         onMouseEnter={handleNoUserMouseEnter}
         onMouseLeave={handleNoUserMouseLeave}
       >
-        <Image
+        {/* <Image
           src={icon}
           alt={step + "-" + "icon-approach"}
           width={iconSize}
           height={iconSize}
-        />
+        /> */}
+        <Icon icon={icon} width={85} />
       </div>
       <div
         className={`approach-main-body ${
