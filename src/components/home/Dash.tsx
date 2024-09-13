@@ -13,8 +13,8 @@ const Dash: React.FC<DashProps> = ({ className }) => {
         x2={"100%"}
         y2="10"
         stroke="black"
-        stroke-width="1"
-        stroke-dasharray="10, 5"
+        strokeWidth="1"
+        strokeDasharray="10, 5"
       />
     </svg>
   );

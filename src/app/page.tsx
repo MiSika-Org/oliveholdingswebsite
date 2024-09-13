@@ -32,7 +32,8 @@ export default function IndexPage() {
           body="Invest: Provide growth capital investment in high-potential agricultural processors, focused on export"
           position="bottom"
           iconSize={84.5}
-          icon="game-icons:plant-roots"
+          isSvg
+          icon="/static/icons/harvest.svg"
         />
         <Dash className="dash-2" />
         <Approach
@@ -56,7 +57,8 @@ export default function IndexPage() {
           body="Leverage: Provide growth capital investment in high-potential agricultural processors, focused on export"
           position="top"
           iconSize={83}
-          icon="game-icons:plant-roots"
+          isSvg
+          icon="/static/icons/lever.svg"
         />
         <RotatingGear className="gear-home" />
       </div>

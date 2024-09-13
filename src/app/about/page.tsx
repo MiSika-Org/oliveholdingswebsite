@@ -1,13 +1,15 @@
 "use client";
 import Header from "@/components/Header";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Circles from "@/components/about/Circles";
 import BottomSlider from "@/components/home/BottomSlider";
 import AboutCard from "@/components/about/AboutCard";
+import type { Carousel as CarouselType } from "react-responsive-carousel";
 
 interface AboutUsProps {}
 
 const AboutUs: React.FC<AboutUsProps> = ({}) => {
+  const carouselRef = useRef<CarouselType>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <div>
@@ -24,8 +26,17 @@ const AboutUs: React.FC<AboutUsProps> = ({}) => {
           </div>
         </div>
         <div className="about-bottom flex flex-row">
-          <Circles currentIndex={currentIndex} />
-          <BottomSlider autoPlay onChange={setCurrentIndex}>
+          <Circles
+            currentIndex={currentIndex}
+            carouselRef={carouselRef}
+            onChange={setCurrentIndex}
+          />
+          <BottomSlider
+            autoPlay
+            onChange={setCurrentIndex}
+            carouselRef={carouselRef}
+            currentIndex={currentIndex}
+          >
             <AboutCard />
             <AboutCard />
             <AboutCard />

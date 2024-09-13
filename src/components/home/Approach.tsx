@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 interface ApproachProps {
   body: string;
@@ -8,6 +9,7 @@ interface ApproachProps {
   position: "top" | "bottom";
   icon: string;
   iconSize: number;
+  isSvg?: boolean;
 }
 
 function bottomWidth(p: number) {
@@ -81,7 +83,14 @@ function bottom(p: number) {
   }
 }
 
-const Approach: React.FC<ApproachProps> = ({ step, body, position, icon }) => {
+const Approach: React.FC<ApproachProps> = ({
+  step,
+  body,
+  position,
+  icon,
+  isSvg,
+  iconSize,
+}) => {
   const [hovered, setHovered] = useState(false);
 
   const handleNoUserMouseEnter = () => {
@@ -109,13 +118,17 @@ const Approach: React.FC<ApproachProps> = ({ step, body, position, icon }) => {
         onMouseEnter={handleNoUserMouseEnter}
         onMouseLeave={handleNoUserMouseLeave}
       >
-        {/* <Image
-          src={icon}
-          alt={step + "-" + "icon-approach"}
-          width={iconSize}
-          height={iconSize}
-        /> */}
-        <Icon icon={icon} width={85} />
+        {isSvg ? (
+          <Image
+            src={icon}
+            alt={step + "-" + "icon-approach"}
+            // fill
+            width={iconSize}
+            height={iconSize}
+          />
+        ) : (
+          <Icon icon={icon} width={85} />
+        )}
       </div>
       <div
         className={`approach-main-body ${

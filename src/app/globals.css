@@ -224,6 +224,12 @@ body {
   background: var(--brand);
   color: white;
 }
+.approach-icon img {
+  transition: all 0.5s ease-in-out;
+}
+.approach-icon-selected img {
+  filter: grayscale(1) invert(1);
+}
 
 .approach-main-body {
   padding: 12px 12px 12px 12px;
@@ -1335,6 +1341,15 @@ img {
   .gear-portfolio {
     width: 400px;
     height: 400px;
+  }
+  .portfolio-images {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1524px) {
+  .portfolio-images {
+    width: 100%;
   }
 }
 
