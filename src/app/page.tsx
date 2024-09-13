@@ -58,7 +58,7 @@ export default function IndexPage() {
           iconSize={83}
           icon="/static/images/gear.png"
         />
-        <RotatingGear />
+        <RotatingGear className="gear-home" />
       </div>
       <div className="portfolio-section flex flex-row">
         <div>

@@ -2,9 +2,12 @@
 import { Gear } from "@phosphor-icons/react/dist/ssr";
 import React, { useEffect, useState } from "react";
 
-interface RotatitngGearProps {}
+interface RotatingGearProps {
+  className?: string;
+}
 
-const RotatingGear: React.FC<RotatitngGearProps> = ({}) => {
+const RotatingGear: React.FC<RotatingGearProps> = (props) => {
+  const { className } = props;
   const [rotation, setRotation] = useState(0);
 
   const handleScroll = () => {
@@ -27,7 +30,7 @@ const RotatingGear: React.FC<RotatitngGearProps> = ({}) => {
   return (
     // <animated.div style={props}>
     <Gear
-      className="gear-home"
+      className={`gear ${className}`}
       style={{
         transform: `rotate(${rotation}deg)`,
         // transition: "transform 0.1s ease-out",
