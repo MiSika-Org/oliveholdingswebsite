@@ -56,6 +56,7 @@ const BottomSlider: React.FC<BottomSliderProps> = (props) => {
       renderArrowPrev={customPrevArrow}
       renderArrowNext={customNextArrow}
       swipeable={swipeable}
+      showThumbs={false}
       renderIndicator={customIndicator}
     >
       {props.children as never}
