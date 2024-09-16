@@ -1410,6 +1410,9 @@ img {
     left: 15%;
     bottom: 49%;
   }
+  .portfolio-right-card {
+    width: 300px;
+  }
 
   .dash-4 {
     left: 60%;
