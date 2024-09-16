@@ -1348,9 +1348,13 @@ img {
     gap: 30px;
   }
 
-  .contact-us {
-    min-height: 968px;
+  .contact {
+    min-height: 100vh;
     height: auto;
+  }
+
+  .contact-us {
+    padding-bottom: 30px;
   }
 
   .contact-us-list-item {
