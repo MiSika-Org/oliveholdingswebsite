@@ -674,7 +674,7 @@ img {
 }
 
 .team-details {
-  width: 577px;
+  width: 60%;
   padding: 15px 25px 14px 25px;
   border: 1px solid #000000;
   margin-top: 16px;
@@ -1214,7 +1214,8 @@ img {
   .team-focus-avatar {
     width: 100%;
     margin-top: 70px;
-    height: calc(100vw - 60px);
+    height: auto;
+    padding-top: 100%;
   }
 
   .team-focus-right {
@@ -1420,6 +1421,27 @@ img {
 
   .dash-4 {
     left: 60%;
+  }
+
+  .team-focus-image {
+    width: 50%;
+  }
+
+  .team-focus-image {
+    width: 50%;
+  }
+
+  .team-details {
+    width: auto;
+  }
+
+  .team-focus-avatar {
+    width: 400px;
+    height: 400px;
+  }
+  .team-focus-image img {
+    width: auto;
+    height: 400px;
   }
 }
 
