@@ -1402,9 +1402,13 @@ img {
   .approach-4 .approach-main-body {
     width: 300px !important;
   }
+  .approach-main-body {
+    min-height: 200px;
+  }
 
   .dash-2 {
-    left: 21%;
+    left: 15%;
+    bottom: 49%;
   }
 
   .dash-4 {

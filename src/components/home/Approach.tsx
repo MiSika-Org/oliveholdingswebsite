@@ -137,16 +137,27 @@ const Approach: React.FC<ApproachProps> = ({
         style={{
           width: bottomWidth(step),
         }}
+        onMouseEnter={handleNoUserMouseEnter}
+        onMouseLeave={handleNoUserMouseLeave}
       >
         <div
           className={`approach-title ${
             hovered ? " approach-title-selected" : ""
           }`}
-        >{`Step 0${step}`}</div>
+        >{`${step}. ${
+          step === 1
+            ? "Invest"
+            : step === 2
+            ? "Enable"
+            : step == 3
+            ? "Scale"
+            : "Leverage"
+        }`}</div>
         <div
           className="approach-body"
           style={{
             height: bottomHeight(step),
+            // opacity: hovered ? 1 : 0,
           }}
         >
           {body}
