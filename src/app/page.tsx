@@ -73,7 +73,7 @@ export default function IndexPage() {
           </div>
           <a
             href="/portfolio"
-            className="flex flex-row items-center justify-center"
+            className="inline-flex flex-row items-center justify-center"
           >
             <p className="portfolio-section-text">View Full Portfolio</p>{" "}
             <Image
