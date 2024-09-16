@@ -71,7 +71,10 @@ export default function IndexPage() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </div>
-          <button className="flex flex-row items-center justify-center">
+          <a
+            href="/portfolio"
+            className="flex flex-row items-center justify-center"
+          >
             <p className="portfolio-section-text">View Full Portfolio</p>{" "}
             <Image
               src={"/static/images/right-arrow.png"}
@@ -80,7 +83,7 @@ export default function IndexPage() {
               width={24}
               height={24}
             />
-          </button>
+          </a>
         </div>
         <div className="portfolio-images">
           <div className="flex flex-row items-center flex-wrap">

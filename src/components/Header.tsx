@@ -19,7 +19,7 @@ const Drawer = ({ isOpen }: { isOpen: boolean }) => (
       <a href="/portfolio" className="link">
         Our Portfolio
       </a>
-      <a href="/" className="link">
+      <a href="#" className="link">
         Impact
       </a>
       <a href="/contact" className="link">
@@ -88,7 +88,7 @@ const Header: React.FC<HeaderProps> = ({ fromHome }) => {
         <a href="/portfolio" className="link">
           Our Portfolio
         </a>
-        <a href="/" className="link">
+        <a href="#" className="link">
           Impact
         </a>
       </div>
@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = ({ fromHome }) => {
           Contact Us
         </a>
         <div className="link">|</div>
-        <a href="/" className="link">
+        <a href="#" className="link">
           Login
         </a>
       </div>

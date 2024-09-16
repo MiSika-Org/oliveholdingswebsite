@@ -5,7 +5,7 @@ interface HomeSlideProps {}
 
 const HomeSlide: React.FC<HomeSlideProps> = ({}) => {
   return (
-    <div className="h-screen home-background  text-white ">
+    <div className="home-background  text-white ">
       <div className="home">
         <div className="home-title">
           A Transformative Platform Connecting West Africa To a $155B Global

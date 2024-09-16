@@ -102,7 +102,7 @@ const Approach: React.FC<ApproachProps> = ({
   };
   return (
     <div
-      className="approach"
+      className={`approach approach-${step}`}
       style={{
         left: left(step),
         bottom: bottom(step),

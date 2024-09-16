@@ -82,6 +82,8 @@ body {
   background-size: cover;
   width: 100%;
   padding-top: 15px;
+  /* min-height: 100vh; */
+  height: 968px;
 }
 
 .header {
@@ -169,6 +171,7 @@ body {
 .explore {
   padding: 35px 32px;
   overflow: hidden;
+  height: 958px;
 }
 
 .explore-title {
@@ -1302,7 +1305,14 @@ img {
     font-weight: 500;
   }
 }
-
+@media (min-width: 769px) and (max-width: 960px) {
+  .action-main .carousel-root {
+    width: 50%;
+  }
+  .action-main .action-stories {
+    width: 100%;
+  }
+}
 @media (min-width: 769px) and (max-width: 1280px) {
   .home {
     width: 90%;
@@ -1314,9 +1324,9 @@ img {
     width: 200%;
   }
 
-  .dash-2 {
+  /* .dash-2 {
     left: 15%;
-  }
+  } */
   .dash-3 {
     left: 35%;
   }
@@ -1330,7 +1340,38 @@ img {
   }
 
   .portfolio-main {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .contact-us-list {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .contact-us {
+    min-height: 968px;
+    height: auto;
+  }
+
+  .contact-us-list-item {
+    width: 220px;
+  }
+
+  .contact-us-left {
+    width: 50%;
+  }
+  .contact-us-form {
+    width: 45%;
+  }
+
+  .contact-us-form button {
+    width: 90%;
+    /* margin: 16px auto 0px; */
+    /* display: flex; */
+  }
+
+  .contact-us-cta {
+    width: 80%;
   }
 
   .portfolio-right {
@@ -1344,6 +1385,30 @@ img {
   }
   .portfolio-images {
     width: 100%;
+  }
+
+  .approach-2 {
+    bottom: 50% !important;
+  }
+  .approach-2 .approach-main-body {
+    width: 400px !important;
+  }
+  .approach-3 .approach-main-body {
+    width: 400px !important;
+  }
+  .approach-1 .approach-main-body {
+    width: 300px !important;
+  }
+  .approach-4 .approach-main-body {
+    width: 300px !important;
+  }
+
+  .dash-2 {
+    left: 21%;
+  }
+
+  .dash-4 {
+    left: 60%;
   }
 }
 
