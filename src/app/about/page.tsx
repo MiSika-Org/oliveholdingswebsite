@@ -26,20 +26,9 @@ const AboutUs: React.FC<AboutUsProps> = ({}) => {
               agricultural landscape in West Africa. Olive has developed a
               robust enterprise model for scaling agribusinesses it invests in,
               and providing immense positive impact and returns to stakeholders
-              involved.
-            </div>
-            <div className="top-section-item-body-2">
-              Currently, Olive is dedicated to connecting over 7 million farmers
-              in West Africa with lucrative global markets valued at more than
-              $155 billion. The platform focuses on key agricultural commodities
-              with high growth potential and has invested in a company poised to
-              disrupt the $150B cocoa sector; a path-breaking nuts and grains
-              processing company; and a unique citrus processing company;
-              ensuring that these businesses gain access to international buyers
-              and markets. By bridging this gap, Olive not only enhances the
-              livelihoods local farmers but also contributes to the global
-              supply chain for agricultural commodities and value-add services
-              in high demand.
+              involved. Currently, Olive is dedicated to connecting over 7
+              million farmers in West Africa with lucrative global markets
+              valued at more than $155 billion.
             </div>
           </div>
         </div>

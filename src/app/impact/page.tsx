@@ -22,7 +22,7 @@ const Impact: React.FC<ImpactProps> = ({}) => {
           </div>
         </div>
         <div className="team-body">
-          <div className="team-title">Impact</div>
+          <div className="team-title">A few key metrics</div>
           <div className="flex flex-row flex-wrap team-images impact-cards">
             <GearCard
               title="3"

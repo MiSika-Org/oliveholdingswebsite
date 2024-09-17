@@ -1,7 +1,7 @@
 export const team = [
   {
     name: "Kofi Kwakwa",
-    title: "Chairman",
+    title: "Chairman & CEO",
     points: [
       "Partner at African Capital Alliance (ACA) and member of Investment Committee for over a decade. ACA, a pioneer in West African investing, has raised and invested over $1bn across West Africa over the last 20+ years",
       "Founder and Director of Sagevest Capital Olive Holdings Website Content 5 August 2024",
@@ -26,20 +26,6 @@ export const team = [
     leader: true,
     image: "nana.jpg",
     id: "2",
-  },
-  {
-    name: "Kofi Kwakwa",
-    title: "CEO",
-    points: [
-      "Partner at African Capital Alliance (ACA) and member of Investment Committee for over a decade. ACA, a pioneer in West African investing, has raised and invested over $1bn across West Africa over the last 20+ years",
-      "Founder and Director of Sagevest Capital Olive Holdings Website Content 5 August 2024",
-      "Former Director for Strategic Investments, Standard Bank Group",
-      "Chairman of the Ghana International School Board; Former Chairman and Director Emeritus at Ashesi University",
-      "MBA, Harvard; BA (Math, Economics, and Food Policy), Swarthmore College",
-    ],
-    leader: false,
-    id: "3",
-    image: "kofi.jpeg",
   },
   {
     name: "Charles Kwenin",

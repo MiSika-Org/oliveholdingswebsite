@@ -118,19 +118,19 @@ export default function IndexPage() {
         <div className="portfolio-images">
           <div className="flex flex-row items-center flex-wrap">
             <Image
-              src={"/static/images/g-company.png"}
+              src={"/static/images/n4g.png"}
               alt="g-company"
               width={174.22}
               height={135}
             />
             <Image
-              src={"/static/images/m-company.png"}
+              src={"/static/images/world.png"}
               alt="m-company"
               width={192.51}
               height={163}
             />
             <Image
-              src={"/static/images/n-company.png"}
+              src={"/static/images/cgl.png"}
               alt="n-company"
               width={189.28}
               height={168}
