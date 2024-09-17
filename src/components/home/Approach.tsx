@@ -75,9 +75,9 @@ function bottom(p: number) {
     case 3:
       return "7.37179487179%";
     case 2:
-      return "57%";
+      return "calc(57% - 90px)";
     case 4:
-      return "48.8247863248%";
+      return "calc(48.8247863248% - 90px)";
     default:
       return "69px";
   }

@@ -24,7 +24,6 @@ const Circle: React.FC<CircleProps> = ({
 }) => {
   return (
     <a
-      href="#"
       onClick={onClick}
       className={`circle circle-${currentCircle} ${
         selected ? "circle-selected" : ""

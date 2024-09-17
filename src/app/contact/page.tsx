@@ -46,12 +46,14 @@ const ContactUs: React.FC<ContactUsProps> = ({}) => {
               Email, call, or complete the form to learn how Olive Holdings can
               help you
             </div>
-            <div className="contact-us-text">info@oliveholdings.io</div>
-            <div className="contact-us-text contact-us-phone">321-123-2331</div>
-            <div className="contact-us-text underline contact-us-customer">
-              Customer Support
+            <div className="contact-us-text">info@oliveholdingsafrica.com</div>
+            <div className="contact-us-text contact-us-phone">
+              +233 26 237 5567
             </div>
-            <div className="flex contact-us-list">
+            {/* <div className="contact-us-text underline contact-us-customer">
+              Customer Support
+            </div> */}
+            {/* <div className="flex contact-us-list">
               <div className="contact-us-list-item">
                 <div className="contact-us-text font-semibold">
                   Customer Support
@@ -76,7 +78,7 @@ const ContactUs: React.FC<ContactUsProps> = ({}) => {
                   Lorem ipsum something something something dolor si avec
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <form className="contact-us-form">
             <div className="contact-us-form-title">Get in Touch</div>

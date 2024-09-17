@@ -1,17 +1,21 @@
 import React from "react";
 
-interface ActionCardProps {}
+interface ActionCardProps {
+  slide: {
+    title: string;
+    body: string;
+  };
+}
 
-const ActionCard: React.FC<ActionCardProps> = ({}) => {
+const ActionCard: React.FC<ActionCardProps> = ({ slide }) => {
   return (
     <div className="action-stories">
-      <div className="action-top">STORIES</div>
-      <div className="action-card-title">NUTS FOR GROWTH</div>
+      <div className="action-top" style={{ opacity: 0 }}>
+        STORIES
+      </div>
+      <div className="action-card-title">{slide.title}</div>
       <div className="action-card-body" style={{ marginBottom: 71 }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        {slide.body}
       </div>
 
       {/* <button className="flex flex-row items-center justify-center action-link">

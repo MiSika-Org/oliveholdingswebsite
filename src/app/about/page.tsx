@@ -5,6 +5,7 @@ import Circles from "@/components/about/Circles";
 import BottomSlider from "@/components/home/BottomSlider";
 import AboutCard from "@/components/about/AboutCard";
 import type { Carousel as CarouselType } from "react-responsive-carousel";
+import { rings } from "@/data/about";
 
 interface AboutUsProps {}
 
@@ -16,12 +17,29 @@ const AboutUs: React.FC<AboutUsProps> = ({}) => {
       <Header />
       <div className="flex flex-col about">
         <div className="top-section">
+          <div className="overlay" />
           <div className="top-section-item">
             <div className="top-section-item-title">About Us</div>
             <div className="top-section-item-body">
-              This is where aspiration meets innovation, candor fuels
-              collaboration and impossible surrenders to teamwork. We champion
-              the bold to achieve the extraordinary.
+              Olive Holdings (&quot;Olive&quot;) is a specialized investment
+              holding platform that plays a pivotal role in transforming the
+              agricultural landscape in West Africa. Olive has developed a
+              robust enterprise model for scaling agribusinesses it invests in,
+              and providing immense positive impact and returns to stakeholders
+              involved.
+            </div>
+            <div className="top-section-item-body-2">
+              Currently, Olive is dedicated to connecting over 7 million farmers
+              in West Africa with lucrative global markets valued at more than
+              $155 billion. The platform focuses on key agricultural commodities
+              with high growth potential and has invested in a company poised to
+              disrupt the $150B cocoa sector; a path-breaking nuts and grains
+              processing company; and a unique citrus processing company;
+              ensuring that these businesses gain access to international buyers
+              and markets. By bridging this gap, Olive not only enhances the
+              livelihoods local farmers but also contributes to the global
+              supply chain for agricultural commodities and value-add services
+              in high demand.
             </div>
           </div>
         </div>
@@ -37,13 +55,39 @@ const AboutUs: React.FC<AboutUsProps> = ({}) => {
             carouselRef={carouselRef}
             currentIndex={currentIndex}
           >
+            {rings.map((r, index) => (
+              <AboutCard key={index} body={r.body} title={r.title} />
+            ))}
+            {/* <AboutCard />
             <AboutCard />
             <AboutCard />
             <AboutCard />
-            <AboutCard />
-            <AboutCard />
-            <AboutCard />
+            <AboutCard /> */}
+            {/* <AboutCard /> */}
           </BottomSlider>
+        </div>
+        <div className="vision-section">
+          <div className="about-bottom-item">
+            <div className="about-bottom-item-title">Our Vision</div>
+            <div className="about-bottom-item-body">
+              Our vision is to fundamentally transform the West African
+              agribusiness landscape by building systems that scale promising
+              export-oriented agribusinesses and economically empower all
+              participants in the ecosystem.
+            </div>
+          </div>
+          <div className="about-bottom-item">
+            <div className="about-bottom-item-title">Our Pledge</div>
+            <div className="about-bottom-item-body">
+              We are committed to fostering an environment of diversity, equity,
+              and inclusion—both within our own walls and throughout the broader
+              venture community. Human capital is our most valuable asset. Our
+              culture, reputation, and achievements are the collective product
+              of our individual differences, life experiences, self-expression,
+              and unique capabilities that our team members and partners pour
+              into their work daily.
+            </div>
+          </div>
         </div>
         {/* <Footer /> */}
       </div>

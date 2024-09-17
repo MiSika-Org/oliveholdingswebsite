@@ -18,27 +18,33 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
             <div className="portfolio-left">
               <div className="team-title portfolio-page-title">Portfolio</div>
               <div className="portfolio-left-section">
-                <div className="portfolio-title">OH ECOSYTEMS LTD (“ECO”)</div>
+                {/* <div className="portfolio-title">OH ECOSYTEMS LTD (“ECO”)</div> */}
                 <div className="portfolio-text">
-                  An integrated processor as a service (“Paas”) platform that
-                  connects small cocoa farmers directly to the world’s chocolate
-                  manufacturers
+                  Our portfolio is anchored in agricultural processing, with a
+                  focus on three key value chains: citrus, cocoa, and shea. We
+                  specialize in driving value through every stage of these
+                  industries, from cultivation to processing, ensuring quality
+                  and sustainability. As we continue to grow, our mission is to
+                  expand into West Africa&#39;s most competitive value chains by
+                  investing in innovative and forward- thinking companies. By
+                  nurturing future leaders in the agricultural sector, we aim to
+                  create lasting economic and social impact across the region.
                 </div>
               </div>
-              <div className="portfolio-left-section">
+              {/* <div className="portfolio-left-section">
                 <div className="portfolio-subtitle">COASTAL GROVES (“CG”)</div>
                 <div className="portfolio-text">
                   An organic orange juice processor in Ghana, with a factory
                   capacity of producing 5000 tons of non-concentrate orange
                   juice annually
                 </div>
-              </div>
-              <div className="portfolio-left-section">
+              </div> */}
+              {/* <div className="portfolio-left-section">
                 <div className="portfolio-subtitle">
                   NUTS FOR GROWTH (“N4G”)
                 </div>
                 <div className="portfolio-text">A shea processor in Ghana</div>
-              </div>
+              </div> */}
             </div>
             <div className="portfolio-right">
               <RotatingGear className="gear-portfolio gear-portfolio-1" />
@@ -75,30 +81,70 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
             <div className="team-title portfolio-page-title">Portfolio</div>
             <div className="flex flex-row justify-between portfolio-section-images-body ">
               <div className="flex flex-col items-center">
-                <Image
+                {/* <Image
                   src={"/static/images/lorem-image.png"}
                   alt={"-" + "icon-approach"}
                   width={310}
                   height={328}
-                />
+                /> */}
+                <div className="flex flex-col items-center portfolio-section-images-item">
+                  <Image
+                    width={285}
+                    height={285}
+                    src="/static/images/n4g.png"
+                    alt="Nuts for Growth"
+                  />
+                  <div className="portfolio-text">
+                    A shea processor in Ghana
+                  </div>
+                </div>
                 <div className="portfolio-image-text">Nuts for Growth</div>
               </div>
               <div className="flex flex-col items-center">
-                <Image
+                {/* <Image
                   src={"/static/images/ecosystem-image.png"}
                   alt={"-" + "icon-approach"}
                   width={310}
                   height={328}
-                />
+                /> */}
+
+                <div className="flex flex-col items-center portfolio-section-images-item">
+                  <Image
+                    width={285}
+                    height={285}
+                    src="/static/images/world.png"
+                    alt="Nuts for Growth"
+                  />
+
+                  <div className="portfolio-text">
+                    An integrated processor as a service (“Paas”) platform that
+                    connects small cocoa farmers directly to the world’s
+                    chocolate manufacturers
+                  </div>
+                </div>
                 <div className="portfolio-image-text">OH Ecosystem</div>
               </div>{" "}
               <div className="flex flex-col items-center">
-                <Image
+                {/* <Image
                   src={"/static/images/lorem-image.png"}
                   alt={"-" + "icon-approach"}
                   width={310}
                   height={328}
-                />
+                /> */}
+                <div className="flex flex-col items-center portfolio-section-images-item">
+                  <Image
+                    width={285}
+                    height={285}
+                    src="/static/images/cgl.png"
+                    alt="Nuts for Growth"
+                  />
+                  <div className="portfolio-text">
+                    An organic orange juice processor in Ghana, with a factory
+                    capacity of producing 5000 tons of non-concentrate orange
+                    juice annually
+                  </div>
+                </div>
+
                 <div className="portfolio-image-text">Coastal Groves(“CG”)</div>
               </div>
             </div>
@@ -108,10 +154,10 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
           <div className="action-title">We want to hear from you </div>
           <div className="action-main flex flex-row">
             <Image
-              src={"/static/images/woman-working.png"}
+              src={"/static/images/colleagues.png"}
               alt="woman-working"
-              width={668}
-              height={421}
+              width={673}
+              height={449}
               className="action-image"
             />
             {/* <BottomSlider> */}

@@ -2,6 +2,7 @@
 
 import { Dismiss24Filled, Navigation24Filled } from "@fluentui/react-icons";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface HeaderProps {
   fromHome?: boolean;
@@ -19,7 +20,7 @@ const Drawer = ({ isOpen }: { isOpen: boolean }) => (
       <a href="/portfolio" className="link">
         Our Portfolio
       </a>
-      <a href="#" className="link">
+      <a href="/impact" className="link">
         Impact
       </a>
       <a href="/contact" className="link">
@@ -65,7 +66,7 @@ const Header: React.FC<HeaderProps> = ({ fromHome }) => {
 
   return (
     <div
-      className={`header flex justify-between flex-row ${
+      className={`header flex justify-between flex-row items-center ${
         fixedCss && fromHome ? "header-home" : ""
       }`}
       style={{
@@ -75,8 +76,16 @@ const Header: React.FC<HeaderProps> = ({ fromHome }) => {
         position: fromHome ? "absolute" : "fixed",
       }}
     >
-      <a href="/" className="font-medium header-title">
-        Olive holdings
+      <a href="/" className="logo-image">
+        <Image
+          src={"/static/images/logo.png"}
+          alt={"logo"}
+          fill
+          style={{ zIndex: 1 }}
+          // width={150}
+          // height={"100%"}
+        />
+        <div className="logo-image-background" />
       </a>
       <div className="links  flex flex-row">
         <a href="/about" className="link">
@@ -88,7 +97,7 @@ const Header: React.FC<HeaderProps> = ({ fromHome }) => {
         <a href="/portfolio" className="link">
           Our Portfolio
         </a>
-        <a href="#" className="link">
+        <a href="/impact" className="link">
           Impact
         </a>
       </div>

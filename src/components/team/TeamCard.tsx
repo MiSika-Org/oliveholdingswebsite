@@ -2,17 +2,30 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 interface TeamCardProps {
-  name: string;
-  title: string;
+  data: {
+    name: string;
+    title: string;
+    points: string[];
+    leader: boolean;
+    id: string;
+    image: string;
+  };
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
+const TeamCard: React.FC<TeamCardProps> = ({ data }) => {
   return (
-    <a href="/team/1" className="team-image">
+    <a
+      href={`/team/${data.id}`}
+      className={`team-image team-image-${data.id}`}
+      style={{
+        backgroundImage: `url(/static/images/${data.image})`,
+      }}
+    >
+      {/* <div className="overlay" /> */}
       <div className="team-image-card">
         <div>
-          <div className="team-image-card-title">{name}</div>
-          <div className="team-image-card-title">{title}</div>
+          <div className="team-image-card-title">{data.name}</div>
+          <div className="team-image-card-title">{data.title}</div>
         </div>
         <Icon icon="mdi-linkedin" width={51} />
       </div>

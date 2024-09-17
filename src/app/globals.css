@@ -82,15 +82,16 @@ body {
   background-size: cover;
   width: 100%;
   padding-top: 15px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   height: 968px;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .header {
   padding: 13px 25px;
   position: fixed;
   width: 100%;
-  z-index: 20;
+  z-index: 100;
   top: 0px;
   transition: all 0.5s ease-in-out;
 }
@@ -124,7 +125,10 @@ body {
 .home {
   padding: 32px;
   width: 944px;
-  margin-top: 130px;
+  margin-top: 215px;
+  position: absolute;
+  color: white;
+  z-index: 10;
 }
 
 .home-title {
@@ -169,9 +173,9 @@ body {
 }
 
 .explore {
-  padding: 35px 32px;
+  padding: 35px 32px 90px;
   overflow: hidden;
-  height: 958px;
+  height: calc(958px + 90px);
 }
 
 .explore-title {
@@ -301,18 +305,22 @@ img {
 }
 
 .portfolio-images {
-  width: 45%;
+  width: 70%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .cards-section {
-  padding: 91px 63px;
+  padding: 73px 50px 43px 50px;
+}
+
+.cards-section-main {
+  padding: 45px 13px 13px;
+  gap: 30px;
 }
 
 .action-section {
   background: #383838;
-  height: 673px;
   margin-bottom: 75px;
   padding: 67px 65px;
 }
@@ -357,6 +365,8 @@ img {
   margin-top: 46px;
   /* margin-left: -30px; */
   padding: 10px 18px 30px;
+
+  height: 477px;
 }
 
 .action-top {
@@ -365,6 +375,13 @@ img {
   line-height: 25.2px;
   color: #a5a5a5;
   margin-bottom: 32px;
+}
+
+.action-top-1 {
+  position: absolute;
+  top: 58px;
+  left: -12px;
+  z-index: 20;
 }
 
 .action-card-title {
@@ -545,15 +562,29 @@ img {
 
 .top-section {
   width: 100%;
-  height: 375px;
+  /* height: 375px; */
   padding: 89px 784px 52px 71px;
   background-color: grey;
+  position: relative;
+}
+
+.about .top-section {
+  background-image: url(/static/images/about-us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-section .overlay {
+  left: 0px;
+  top: 0px;
 }
 
 .top-section-item {
-  width: 585px;
-  height: 234px;
+  /* width: 585px; */
+  /* height: 234px; */
   padding: 26px 93px 40px 51px;
+  position: relative;
+  z-index: 15;
   gap: 0px;
   border-top: 4px solid #1ea52b;
   background: #ffffff;
@@ -572,6 +603,12 @@ img {
   text-align: left;
   margin-top: 18px;
 }
+.top-section-item-body-2 {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
 
 .about-bottom {
   padding: 10px 71px;
@@ -589,6 +626,18 @@ img {
   font-weight: 400;
   line-height: 41px;
   margin: 30px 0px;
+}
+
+.team .top-section {
+  background-image: url(/static/images/team.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team .top-section-item,
+.impact .top-section-item {
+  width: 585px;
 }
 
 .team-body {
@@ -614,7 +663,7 @@ img {
   width: 354px;
   height: 471px;
   /* background-color: grey; */
-  background-image: url(/static/images/linked-image.png);
+  /* background-image: url(/static/images/linked-image.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -626,6 +675,14 @@ img {
   padding: 21px 13px;
 }
 
+.team-image .overlay {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
 .team-image-card {
   background-color: var(--brand);
   color: white;
@@ -635,6 +692,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .team-image-card-title {
@@ -664,12 +723,17 @@ img {
 }
 
 .team-focus {
-  padding: 52px 42px 60px 21px;
+  padding: 52px 42px 60px 50px;
   gap: 100px;
   /* margin-top: 52px; */
 }
 
 .team-focus-right {
+  margin-top: 83px;
+  flex: 1;
+}
+
+.team-focus-left {
   margin-top: 83px;
 }
 
@@ -849,7 +913,7 @@ img {
 
 .dash-1 {
   left: 0%;
-  bottom: 62%;
+  bottom: calc(62% + 90px);
   position: absolute;
   transform: rotate(90deg);
   z-index: 1;
@@ -858,7 +922,7 @@ img {
 
 .dash-2 {
   left: 10%;
-  bottom: 51%;
+  bottom: calc(51% - 90px);
   position: absolute;
   transform: rotate(140.2deg);
   z-index: 1;
@@ -866,17 +930,17 @@ img {
 }
 
 .dash-3 {
-  left: 30%;
-  bottom: 51%;
+  left: 35%;
+  bottom: 47%;
   position: absolute;
   transform: rotate(45.2deg);
   z-index: 1;
-  width: 30%;
+  width: 23%;
 }
 
 .dash-4 {
   left: 56%;
-  bottom: 45%;
+  bottom: calc(42%);
   position: absolute;
   transform: rotate(140.2deg);
   z-index: 1;
@@ -914,6 +978,7 @@ img {
   right: 0;
   bottom: 0;
   top: 0;
+  cursor: pointer;
   transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
@@ -934,6 +999,7 @@ img {
 .circle-1 {
   width: 100%;
   height: 100%;
+  display: none;
 }
 
 .circle-2 {
@@ -1016,11 +1082,149 @@ img {
   padding-top: 53.5938px;
 }
 
+.overlay {
+  background: #00000033;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.home-slide .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.impact .top-section {
+  background-image: url(/static/images/team.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-image {
+  position: relative;
+  height: 60px;
+  width: 80px;
+  margin-bottom: -20px;
+}
+.logo-image-background {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  height: 85%;
+}
+
+.vision-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 68px;
+  flex-wrap: wrap;
+  gap: 115px;
+  padding: 0px 50px 100px;
+}
+
+.about-bottom-item {
+  width: 550px;
+  height: 455px;
+  background: #fafafa;
+
+  padding: 22px 31px 119px 40px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+  /* gap: 0px;
+  opacity: 0px; */
+}
+
+.about-bottom-item-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 41px;
+  text-align: left;
+}
+
+.about-bottom-item-body {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 41px;
+  text-align: left;
+  margin-top: 18px;
+}
+
+.portfolio-section-images-item {
+  width: 310px;
+  height: 328px;
+  gap: 0px;
+  opacity: 0px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 13px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 0px 0px 55px 0px;
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 0.6s ease;
+}
+
+.portfolio-section-images-item:hover {
+  transform: rotateY(180deg);
+}
+
+.portfolio-section-images-item .portfolio-text {
+  opacity: 0;
+  transition: all 0.6s ease;
+  transform: rotateY(180deg);
+  position: absolute;
+  padding: 20px;
+}
+.portfolio-section-images-item:hover .portfolio-text {
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+
+.portfolio-section-images-item:hover img {
+  opacity: 1;
+  transition: all 0.6s ease;
+  /* transform: rotateY(180deg); */
+}
+
+.portfolio-section-images-item:hover img {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.impact-right-card {
+  height: auto;
+  position: relative;
+  border-top: 10px solid var(--brand-secondary);
+}
+
+.impact-cards {
+  margin-bottom: 50px;
+}
+
+.home-approach-body {
+  width: 600px;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .links {
     display: none;
   }
 
+  .home-approach-body {
+    width: 100%;
+  }
+
+  .impact-right-card {
+    width: 100% !important;
+  }
+  .impact-cards {
+    gap: 30px !important;
+  }
   .left-links {
     display: none;
   }
@@ -1031,7 +1235,7 @@ img {
 
   .home {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 120px;
   }
 
   .home-title {
@@ -1100,7 +1304,7 @@ img {
   }
 
   .cards-section {
-    padding: 30px;
+    padding: 73px 30px 30px;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
@@ -1142,9 +1346,10 @@ img {
   }
 
   .top-section-item {
-    width: 100%;
+    width: 100% !important;
     height: auto;
     padding-left: 26px;
+    padding-right: 26px;
   }
 
   .about-bottom {
@@ -1222,6 +1427,10 @@ img {
     margin-top: 20px;
   }
 
+  .team-focus-left {
+    margin-top: 20px;
+  }
+
   .portfolio-page {
     padding: 70px 28px;
   }
@@ -1263,8 +1472,8 @@ img {
     width: 100% !important;
   }
   .home-background {
-    min-height: 100vh;
-    height: auto;
+    min-height: unset;
+    /* height: auto; */
   }
   .portfolio-images > div {
     justify-content: center;
@@ -1305,13 +1514,23 @@ img {
     line-height: 14px;
     font-weight: 500;
   }
+
+  .action-top-1 {
+    position: absolute;
+    top: -18px;
+    left: 18px;
+    z-index: 20;
+  }
+  .action-stories {
+    height: auto;
+  }
 }
 @media (min-width: 769px) and (max-width: 960px) {
   .action-main .carousel-root {
-    width: 50%;
+    width: 400px;
   }
   .action-main .action-stories {
-    width: 100%;
+    width: 400px;
   }
 }
 @media (min-width: 769px) and (max-width: 1280px) {
@@ -1329,7 +1548,8 @@ img {
     left: 15%;
   } */
   .dash-3 {
-    left: 35%;
+    left: 40%;
+    bottom: 45%;
   }
 
   .about-bottom {
@@ -1393,7 +1613,7 @@ img {
   }
 
   .approach-2 {
-    bottom: 50% !important;
+    bottom: calc(45%) !important;
   }
   .approach-2 .approach-main-body {
     width: 400px !important;
@@ -1427,10 +1647,6 @@ img {
     width: 50%;
   }
 
-  .team-focus-image {
-    width: 50%;
-  }
-
   .team-details {
     width: auto;
   }
@@ -1443,11 +1659,25 @@ img {
     width: auto;
     height: 400px;
   }
+  .about .top-section-item {
+    width: 800px;
+  }
+
+  .vision-section {
+    gap: 20px;
+  }
+  .about-bottom-item {
+    width: 45%;
+    height: 500px;
+  }
 }
 
 @media (min-width: 1281px) and (max-width: 1524px) {
   .portfolio-images {
     width: 100%;
+  }
+  .portfolio-section {
+    height: auto;
   }
 }
 
