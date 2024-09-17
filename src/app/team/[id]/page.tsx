@@ -11,9 +11,7 @@ const Individual: React.FC<IndividualProps> = ({}) => {
   const params = useParams();
   const { push } = useRouter();
 
-  console.log({ p: params });
   const individual = team.find((person) => person.id === params.id);
-  console.log({ individual });
 
   useEffect(() => {
     if (!individual) {
