@@ -9,10 +9,11 @@ const Card: React.FC<CardProps> = ({}) => {
       <div className="action-top">Send us a pitch!</div>
       <div className="action-card-title">{`We're eager to hear from you`}</div>
       <div className="action-card-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        If you are an entrepreneur building agribusiness in west Africa, connect
+        with us by uploading a short document on your company. We will reach out
+        to start a conversation to find out if there is any way we can support
+        you to build. We are always looking for new partners and potential
+        portfolio companies.
       </div>
 
       <button className="flex flex-row items-center justify-center action-link">

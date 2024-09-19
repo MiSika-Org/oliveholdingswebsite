@@ -26,10 +26,13 @@ export default function IndexPage() {
               Food & Agribusiness Market
             </div>
             <div className="home-subtitle">
-              Connecting Investors, DEFIs, and Agribusinesses with Insights and
-              Opportunities for Sustainable Development
+              Building manufacturing for food and agribusiness across west
+              Africa
             </div>
-            <button className="home-button flex flex-row items-center justify-center">
+            <a
+              href="https://z05wpu23433.typeform.com/to/mNjhGf10"
+              className="home-button flex flex-row items-center justify-center"
+            >
               <p>Invest with Us</p>{" "}
               <Image
                 src={"/static/images/right-arrow.png"}
@@ -38,7 +41,7 @@ export default function IndexPage() {
                 width={24}
                 height={24}
               />
-            </button>
+            </a>
           </div>
           <BottomSlider autoPlay swipeable={false}>
             {slider.map((singleSlider, index) => (

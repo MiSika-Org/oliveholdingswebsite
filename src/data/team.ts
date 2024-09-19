@@ -11,6 +11,7 @@ export const team = [
     ],
     leader: true,
     image: "kofi.jpeg",
+    linkedIn: "https://gh.linkedin.com/in/kofikwakwa",
     id: "1",
   },
   {
@@ -25,6 +26,7 @@ export const team = [
     ],
     leader: true,
     image: "nana.jpg",
+    linkedIn: "https://www.linkedin.com/in/nanaappiahkorang/",
     id: "2",
   },
   {
@@ -40,6 +42,7 @@ export const team = [
     leader: false,
     id: "4",
     image: "charles.jpeg",
+    linkedIn: "https://gh.linkedin.com/in/charles-kwenin-5a137639",
   },
   {
     name: "Barry Muntari-Sumara",
@@ -54,6 +57,7 @@ export const team = [
     leader: false,
     id: "5",
     image: "barry.jpg",
+    linkedIn: "https://www.linkedin.com/in/barikisumuntari",
   },
   {
     name: "Akua Lartey",
@@ -68,6 +72,7 @@ export const team = [
     ],
     leader: false,
     image: "akua.jpeg",
+    linkedIn: "https://gh.linkedin.com/in/akua-lartey-27377522",
     id: "6",
   },
 ];

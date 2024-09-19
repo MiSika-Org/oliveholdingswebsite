@@ -22,10 +22,10 @@ const AboutUs: React.FC<AboutUsProps> = ({}) => {
             <div className="top-section-item-title">About Us</div>
             <div className="top-section-item-body">
               Olive Holdings (&quot;Olive&quot;) is a specialized investment
-              holding platform that plays a pivotal role in transforming the
-              agricultural landscape in West Africa. Olive has developed a
-              robust enterprise model for scaling agribusinesses it invests in,
-              and providing immense positive impact and returns to stakeholders
+              holding platform that plays a pivotal role in industrializing
+              agribusiness in West Africa. Olive has developed a robust
+              enterprise model for scaling agribusinesses it invests in, and
+              providing immense positive impact and returns to stakeholders
               involved. Currently, Olive is dedicated to connecting over 7
               million farmers in West Africa with lucrative global markets
               valued at more than $155 billion.
@@ -68,13 +68,15 @@ const AboutUs: React.FC<AboutUsProps> = ({}) => {
           <div className="about-bottom-item">
             <div className="about-bottom-item-title">Our Pledge</div>
             <div className="about-bottom-item-body">
-              We are committed to fostering an environment of diversity, equity,
-              and inclusion—both within our own walls and throughout the broader
-              venture community. Human capital is our most valuable asset. Our
-              culture, reputation, and achievements are the collective product
-              of our individual differences, life experiences, self-expression,
-              and unique capabilities that our team members and partners pour
-              into their work daily.
+              We are committed to revolutionizing the West African agribusiness
+              landscape by developing scalable systems that elevate
+              export-oriented agribusinesses. Our goal is to economically
+              empower every stakeholder in the ecosystem, fostering growth that
+              is inclusive, sustainable, and transformative. We leverage our
+              team’s diverse experiences, shared passion for empowering
+              underserved groups including women, transparency in our dealings
+              and strong partnerships in the ecosystem, to positively impact the
+              future of the West African agribusinesses sector.
             </div>
           </div>
         </div>
