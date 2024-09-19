@@ -129,8 +129,9 @@ export default function IndexPage() {
             <Image
               src={"/static/images/world.png"}
               alt="m-company"
-              width={192.51}
-              height={163}
+              width={152.51}
+              style={{ margin: 30 }}
+              height={123}
             />
             <Image
               src={"/static/images/cgl.png"}
