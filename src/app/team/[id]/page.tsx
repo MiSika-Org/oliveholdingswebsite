@@ -43,7 +43,9 @@ const Individual: React.FC<IndividualProps> = ({}) => {
           <div className="team-focus-right">
             <div className="team-focus-title">{individual?.name}</div>
             <div className="team-focus-sub-title ">{individual?.title}</div>
-            <Icon icon="mdi-linkedin" width={40} color="62b46a" />
+            <a href={individual?.linkedIn}>
+              <Icon icon="mdi-linkedin" width={40} color="62b46a" />
+            </a>
             <div className="team-details">
               <ul>
                 {individual?.points.map((p, index) => (

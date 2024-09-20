@@ -5,6 +5,7 @@ import Image from "next/image";
 import Card from "@/components/portfolio/Card";
 import RotatingGear from "@/components/RotatingGear";
 import GearCard from "@/components/portfolio/GearCard";
+import PortofolioCard from "@/components/portfolio/PortofolioCard";
 
 interface PortfolioProps {}
 
@@ -17,19 +18,30 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
           <div className="flex flex-row portfolio-main">
             <div className="portfolio-left">
               <div className="team-title portfolio-page-title">Portfolio</div>
-              <div className="portfolio-left-section">
-                {/* <div className="portfolio-title">OH ECOSYTEMS LTD (“ECO”)</div> */}
-                <div className="portfolio-text">
-                  Our portfolio is anchored in agricultural processing, with a
-                  focus on three key value chains: citrus, cocoa, and shea. We
-                  specialize in driving value through every stage of these
-                  industries, from cultivation to processing, ensuring quality
-                  and sustainability. As we continue to grow, our mission is to
-                  expand into West Africa&#39;s most competitive value chains by
-                  investing in innovative and forward- thinking companies. By
-                  nurturing future leaders in the agricultural sector, we aim to
-                  create lasting economic and social impact across the region.
-                </div>
+              <div className="portfolio-left-section flex flex-col gap-10">
+                {/* <div className="flex flex-row justify-between portfolio-section-images-body flex-col "> */}
+                <PortofolioCard
+                  text="A shea processor in Ghana"
+                  title="Nuts for Growth"
+                  image="/static/images/n4g.png"
+                  imgHeight={150}
+                  imgWidth={150}
+                />
+                <PortofolioCard
+                  text="An integrated processor as a service (“Paas”) platform that connects small cocoa farmers directly to the world’s chocolate manufacturers"
+                  title="OH Ecosystem"
+                  image="/static/images/world.png"
+                  imgHeight={100}
+                  imgWidth={100}
+                />
+                <PortofolioCard
+                  text="An organic orange juice processor in Ghana, with a factory capacity of producing 5000 tons of non-concentrate orange juice annually"
+                  title="Coastal Groves(“CG”)"
+                  image="/static/images/cgl.png"
+                  imgHeight={150}
+                  imgWidth={150}
+                />
+                {/* </div> */}
               </div>
               {/* <div className="portfolio-left-section">
                 <div className="portfolio-subtitle">COASTAL GROVES (“CG”)</div>
@@ -77,84 +89,38 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
               />
             </div>
           </div>
-          <div className="portfolio-section-images">
+          {/* <div className="portfolio-section-images">
             <div className="team-title portfolio-page-title">Portfolio</div>
             <div className="flex flex-row justify-between portfolio-section-images-body ">
-              <div className="flex flex-col items-center">
-                {/* <Image
-                  src={"/static/images/lorem-image.png"}
-                  alt={"-" + "icon-approach"}
-                  width={310}
-                  height={328}
-                /> */}
-                <div className="flex flex-col items-center portfolio-section-images-item">
-                  <Image
-                    width={285}
-                    height={285}
-                    src="/static/images/n4g.png"
-                    alt="Nuts for Growth"
-                  />
-                  <div className="portfolio-text">
-                    A shea processor in Ghana
-                  </div>
-                </div>
-                <div className="portfolio-image-text">Nuts for Growth</div>
-              </div>
-              <div className="flex flex-col items-center">
-                {/* <Image
-                  src={"/static/images/ecosystem-image.png"}
-                  alt={"-" + "icon-approach"}
-                  width={310}
-                  height={328}
-                /> */}
-
-                <div className="flex flex-col items-center portfolio-section-images-item">
-                  <Image
-                    width={285}
-                    height={285}
-                    src="/static/images/world.png"
-                    alt="Nuts for Growth"
-                  />
-
-                  <div className="portfolio-text">
-                    An integrated processor as a service (“Paas”) platform that
-                    connects small cocoa farmers directly to the world’s
-                    chocolate manufacturers
-                  </div>
-                </div>
-                <div className="portfolio-image-text">OH Ecosystem</div>
-              </div>{" "}
-              <div className="flex flex-col items-center">
-                {/* <Image
-                  src={"/static/images/lorem-image.png"}
-                  alt={"-" + "icon-approach"}
-                  width={310}
-                  height={328}
-                /> */}
-                <div className="flex flex-col items-center portfolio-section-images-item">
-                  <Image
-                    width={285}
-                    height={285}
-                    src="/static/images/cgl.png"
-                    alt="Nuts for Growth"
-                  />
-                  <div className="portfolio-text">
-                    An organic orange juice processor in Ghana, with a factory
-                    capacity of producing 5000 tons of non-concentrate orange
-                    juice annually
-                  </div>
-                </div>
-
-                <div className="portfolio-image-text">Coastal Groves(“CG”)</div>
-              </div>
+              <PortofolioCard
+                text="A shea processor in Ghana"
+                title="Nuts for Growth"
+                image="/static/images/n4g.png"
+                imgHeight={285}
+                imgWidth={285}
+              />
+              <PortofolioCard
+                text="An integrated processor as a service (“Paas”) platform that connects small cocoa farmers directly to the world’s chocolate manufacturers"
+                title="OH Ecosystem"
+                image="/static/images/world.png"
+                imgHeight={200}
+                imgWidth={200}
+              />
+              <PortofolioCard
+                text="An organic orange juice processor in Ghana, with a factory capacity of producing 5000 tons of non-concentrate orange juice annually"
+                title="Coastal Groves(“CG”)"
+                image="/static/images/cgl.png"
+                imgHeight={285}
+                imgWidth={285}
+              />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="action-section text-white">
           <div className="action-title">We want to hear from you </div>
           <div className="action-main flex flex-row">
             <Image
-              src={"/static/images/colleagues.png"}
+              src={"/static/images/colleagues.jpg"}
               alt="woman-working"
               width={673}
               height={449}

@@ -765,7 +765,7 @@ img {
 }
 
 .portfolio-left .portfolio-text {
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .portfolio-right {
@@ -1102,7 +1102,7 @@ img {
 }
 
 .impact .top-section {
-  background-image: url(/static/images/team.jpg);
+  background-image: url(/static/images/impact.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1133,7 +1133,7 @@ img {
 
 .about-bottom-item {
   width: 550px;
-  height: 455px;
+  /* height: 455px; */
   background: #fafafa;
 
   padding: 22px 31px 119px 40px;
@@ -1159,8 +1159,8 @@ img {
 }
 
 .portfolio-section-images-item {
-  width: 310px;
-  height: 328px;
+  width: 260px;
+  height: 228px;
   gap: 0px;
   background: #eeeeee;
   display: flex;
@@ -1174,18 +1174,18 @@ img {
   transition: transform 0.6s ease;
 }
 
-.portfolio-section-images-item:hover {
+/* .portfolio-section-images-item:hover {
   transform: rotateY(180deg);
-}
+} */
 
-.portfolio-section-images-item .portfolio-text {
+/* .portfolio-section-images-item .portfolio-text {
   opacity: 0;
   transition: all 0.6s ease;
   transform: rotateY(180deg);
   position: absolute;
   padding: 20px;
-}
-.portfolio-section-images-item:hover .portfolio-text {
+} */
+/* .portfolio-section-images-item:hover .portfolio-text {
   opacity: 1;
   transition: all 0.6s ease;
 }
@@ -1193,13 +1193,12 @@ img {
 .portfolio-section-images-item:hover img {
   opacity: 1;
   transition: all 0.6s ease;
-  /* transform: rotateY(180deg); */
 }
 
 .portfolio-section-images-item:hover img {
   opacity: 0;
   transition: all 0.6s ease;
-}
+} */
 
 .impact-right-card {
   height: auto;
@@ -1539,6 +1538,18 @@ img {
   .action-main .action-stories {
     width: 400px;
   }
+
+  .about-bottom {
+    flex-direction: column;
+    padding: 30px 30px 100px 30px;
+    gap: 150px;
+  }
+  .circle-line {
+    transform: rotate(90deg);
+    margin-left: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+  }
 }
 @media (min-width: 769px) and (max-width: 1280px) {
   .home {
@@ -1675,7 +1686,7 @@ img {
   }
   .about-bottom-item {
     width: 45%;
-    height: 500px;
+    /* height: 500px; */
   }
 }
 
@@ -1686,7 +1697,34 @@ img {
   .portfolio-section {
     height: auto;
   }
+  .about-bottom {
+    gap: 180px;
+  }
+  .circle-line {
+    width: 80%;
+  }
 }
+
+@media (min-width: 961px) and (max-width: 1140px) {
+  .about-bottom {
+    gap: 50px;
+  }
+  .circle-line {
+    /* transform: rotate(90deg);
+    margin-left: 0%;
+    margin-bottom: 0%; */
+    width: 60%;
+  }
+}
+
+/* @media (min-width: 1281px) and (max-width: 1524px) {
+  .about-bottom {
+    gap: 180px;
+  }
+  .circle-line {
+    width: 80%;
+  }
+} */
 
 /* @media (max-width: 1024px) {
   .dash-2 {
