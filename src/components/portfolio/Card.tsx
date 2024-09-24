@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({}) => {
 
       <a
         href="https://z05wpu23433.typeform.com/to/mNjhGf10"
-        className="flex flex-row items-center justify-center action-link"
+        className="flex flex-row items-center justify-start action-link"
       >
         <p className="action-card-link">Submit pitch</p>{" "}
         <ArrowRight24Filled color="#62b46a" />
