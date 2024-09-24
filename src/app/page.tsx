@@ -33,7 +33,7 @@ export default function IndexPage() {
               href="https://z05wpu23433.typeform.com/to/mNjhGf10"
               className="home-button flex flex-row items-center justify-center"
             >
-              <p>Invest with Us</p>{" "}
+              <p>Join Our Journey</p>{" "}
               <Image
                 src={"/static/images/right-arrow.png"}
                 alt="button-arrow"
@@ -85,7 +85,7 @@ export default function IndexPage() {
         <Dash className="dash-4" />
         <Approach
           step={4}
-          body="Provide growth capital investment in high-potential agricultural processors, focused on export"
+          body="Build an ecosystem with complementary businesses and support services that magnify the impact and profitability across the portfolio"
           position="top"
           iconSize={83}
           isSvg

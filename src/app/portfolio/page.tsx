@@ -21,7 +21,7 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
               <div className="portfolio-left-section flex flex-col gap-10">
                 {/* <div className="flex flex-row justify-between portfolio-section-images-body flex-col "> */}
                 <PortofolioCard
-                  text="A shea processor in Ghana"
+                  text="Shea and soya processor in Northern Ghana with the second largest Shea and soya crushing factory in the world and a supply network of over 70000 women"
                   title="Nuts for Growth"
                   image="/static/images/n4g.png"
                   imgHeight={150}
@@ -119,13 +119,13 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
         <div className="action-section text-white">
           <div className="action-title">We want to hear from you </div>
           <div className="action-main flex flex-row">
-            <Image
-              src={"/static/images/colleagues.jpg"}
-              alt="woman-working"
-              width={673}
-              height={449}
-              className="action-image"
-            />
+            <div className="relative action-bottom-image ">
+              <Image
+                src={"/static/images/colleagues.jpg"}
+                alt="woman-working"
+                fill
+              />
+            </div>
             {/* <BottomSlider> */}
             <Card />
             {/* <Card />
