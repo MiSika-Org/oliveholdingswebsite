@@ -21,14 +21,14 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
               <div className="portfolio-left-section flex flex-col gap-10">
                 {/* <div className="flex flex-row justify-between portfolio-section-images-body flex-col "> */}
                 <PortofolioCard
-                  text="Shea and soya processor in Northern Ghana with the second largest Shea and soya crushing factory in the world and a supply network of over 70000 women"
+                  text="A shea and soya processor with a newly commissioned 300 on per day processing factory and a 71000 strong network of female suppliers"
                   title="Nuts for Growth"
                   image="/static/images/n4g.png"
                   imgHeight={150}
                   imgWidth={150}
                 />
                 <PortofolioCard
-                  text="An integrated processor as a service (“Paas”) platform that connects small cocoa farmers directly to the world’s chocolate manufacturers"
+                  text="A unique cocoa processor with factories in Nigeria and Germany and strategic relationships for processing capacity in Ghana. Company has launched and integrated Processing as a service which enables farmers to access processing capacity without owning it and connects them directly to the worlds chocolate manufacturers."
                   title="OH Ecosystem"
                   image="/static/images/world.png"
                   imgHeight={100}

@@ -16,7 +16,7 @@ export const team = [
   },
   {
     name: "Nana Appiah-Korang",
-    title: "Lead Independent Board Chair",
+    title: "Lead Independent Non Executive Director",
     points: [
       "Director of Emerging Capital Partners, Active participation in the fundraising of two funds (US$613m and US$523m.)",
       "Co-Founder and Board Member at Amayi Foods (Nigerian Food Manufacturer)",

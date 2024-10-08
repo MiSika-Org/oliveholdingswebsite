@@ -1,5 +1,11 @@
 export const slider = [
   {
+    sliderImage: "hero-a.jpeg",
+  },  
+  {
+    sliderImage: "hero-b.jpeg",
+  },  
+  {
     sliderImage: "hero-1.jpg",
   },
   {
