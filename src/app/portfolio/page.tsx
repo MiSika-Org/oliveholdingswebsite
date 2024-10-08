@@ -21,7 +21,7 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
               <div className="portfolio-left-section flex flex-col gap-10">
                 {/* <div className="flex flex-row justify-between portfolio-section-images-body flex-col "> */}
                 <PortofolioCard
-                  text="Shea and soya processor in Northern Ghana with the second largest Shea and soya crushing factory in the world and a supply network of over 70000 women"
+                  text="A shea and soya processor with a newly commissioned 300 on per day processing factory and a 71000 strong network of female suppliers"
                   title="Nuts for Growth"
                   image="/static/images/n4g.png"
                   imgHeight={150}
