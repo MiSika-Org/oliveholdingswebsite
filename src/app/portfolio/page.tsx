@@ -28,7 +28,7 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
                   imgWidth={150}
                 />
                 <PortofolioCard
-                  text="An integrated processor as a service (“Paas”) platform that connects small cocoa farmers directly to the world’s chocolate manufacturers"
+                  text="A unique cocoa processor with factories in Nigeria and Germany and strategic relationships for processing capacity in Ghana. Company has launched and integrated Processing as a service which enables farmers to access processing capacity without owning it and connects them directly to the worlds chocolate manufacturers."
                   title="OH Ecosystem"
                   image="/static/images/world.png"
                   imgHeight={100}
