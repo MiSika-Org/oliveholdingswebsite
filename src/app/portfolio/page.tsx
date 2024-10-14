@@ -1,11 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import React from "react";
-import Image from "next/image";
 import Card from "@/components/portfolio/Card";
-import RotatingGear from "@/components/RotatingGear";
 import GearCard from "@/components/portfolio/GearCard";
 import PortofolioCard from "@/components/portfolio/PortofolioCard";
+import RotatingGear from "@/components/RotatingGear";
+import Image from "next/image";
+import React from "react";
 
 interface PortfolioProps {}
 
@@ -21,22 +21,22 @@ const Portfolio: React.FC<PortfolioProps> = ({}) => {
               <div className="portfolio-left-section flex flex-col gap-10">
                 {/* <div className="flex flex-row justify-between portfolio-section-images-body flex-col "> */}
                 <PortofolioCard
-                  text="A shea and soya processor with a newly commissioned 300 on per day processing factory and a 71000 strong network of female suppliers"
+                  text="A shea and soya processor with a newly commissioned 300 ton per day processing factory and a 71000 strong network of female suppliers"
                   title="Nuts for Growth"
                   image="/static/images/n4g.png"
                   imgHeight={150}
                   imgWidth={150}
                 />
                 <PortofolioCard
-                  text="A unique cocoa processor with factories in Nigeria and Germany and strategic relationships for processing capacity in Ghana. Company has launched and integrated Processing as a service which enables farmers to access processing capacity without owning it and connects them directly to the worlds chocolate manufacturers."
+                  text="A unique cocoa processor with factories in Nigeria and Germany and strategic relationships for processing capacity in Ghana. Company has launched and integrated “Processing as a Service” (PAAS) which enables farmers to access processing capacity without owning it and connects them directly to the world's chocolate manufacturers."
                   title="OH Ecosystem"
                   image="/static/images/world.png"
                   imgHeight={100}
                   imgWidth={100}
                 />
                 <PortofolioCard
-                  text="An organic orange juice processor in Ghana, with a factory capacity of producing 5000 tons of non-concentrate orange juice annually"
-                  title="Coastal Groves(“CG”)"
+                  text="An organic orange juice processor in Ghana, with a factory capacity of 5000 tons of non-concentrate orange juice annually"
+                  title="Coastal Groves"
                   image="/static/images/cgl.png"
                   imgHeight={150}
                   imgWidth={150}
