@@ -27,7 +27,7 @@ const Impact: React.FC<ImpactProps> = ({}) => {
             <GearCard
               title="3"
               className="impact-right-card"
-              body="Portfolio companies the cocoa, shea and citrus sectors"
+              body="Portfolio companies in the cocoa, shea and citrus sectors"
             />
             <GearCard
               title="2"
